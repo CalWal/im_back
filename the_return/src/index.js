@@ -5,7 +5,12 @@ import ReactDOM from "react-dom";
 //Create a react component
 
 const App = function() {
-  return <div>Hi there!</div>;
+  return (
+    <div>
+      Hi there!
+      <div>Yep its working fine now</div>
+    </div>
+  );
 };
 
 //T Take the react component and show it on the browser
