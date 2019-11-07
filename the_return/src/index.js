@@ -5,10 +5,20 @@ import ReactDOM from "react-dom";
 //Create a react component
 
 const App = function() {
+  const buttonText = "Click Me!";
+  const buttonStyle = { backgroundColor: "blue", color: "white" };
+
+  function getTime() {
+    return new Date().toLocaleTimeString();
+  }
   return (
     <div>
-      Hi there!
-      <div>Yep its working fine now</div>
+      <h1>The time is {getTime()}</h1>
+      <label className="label" htmlFor="name">
+        Enter Name:
+      </label>
+      <input id="name" type="text" />
+      <button style={buttonStyle}>{buttonText}</button>
     </div>
   );
 };
